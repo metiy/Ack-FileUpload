@@ -1,7 +1,7 @@
 import requests
 import sys
 
-VERIFY   = False #REMOVE WHEN CERTIFICATES ARE OK
+VERIFY   = False #REMOVE WHEN SSL CERTIFICATES ARE OK
 HTTPS    = True
 HEADERS  = {'Content-Type': 'multipart/form-data'}
 TARGET   = "localhost/upload"
