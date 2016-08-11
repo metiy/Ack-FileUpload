@@ -8,7 +8,7 @@ PORT               = 8888
 UPLOADS            = "uploads/"
 DEBUG              = False
 SECURITY_RANDOMIZE = False
-ADD_TIME_TO_FILE   = True #Only for not randomized
+ADD_TIME_TO_FILE   = True #Useless if security_randomize set to True
 
 
 class Upload(tornado.web.RequestHandler):
@@ -23,7 +23,8 @@ class Upload(tornado.web.RequestHandler):
         fh = open(UPLOADS + cname, 'wb')
         fh.write(fileinfo['body'])
         self.finish("[+] Done")
-
+    def get(self):
+        self.write("POST Only")
 
 application = tornado.web.Application([
         (r"/upload", Upload),
