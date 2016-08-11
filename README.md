@@ -1,17 +1,15 @@
-##Install
-Python is required.
-
+#Install
 sudo pip3 install tornado
 
 git clone https://github.com/Storm75/Ack-FileUpload.git
 
 cd Ack-FileUpload && mkdir uploads
 
-##Server
+#Server
 
 Usage : python server.py
 
-#Script Variables
+##Script Variables
 
 PORT               : Server listening port, this should match the Nginx configuration file
 
@@ -24,11 +22,11 @@ SECURITY_RANDOMIZE : Set to "True" to change filenames to GUID-4.
 ADD_TIME_TO_FILE   : Set to "true" to add datetime to filenames to avoid erasing, useless if SECURITY_RANDOMIZE is set to true.
 
 
-## Client
+# Client
 
 Usage : python client.py FILE
 
-#Script Variables
+##Script Variables
 
 VERIFY    : Certificate Verification, set this to false only for testing purpose.
 
@@ -39,6 +37,6 @@ HEADERS   : Post request headers
 TARGET    : Server address
 
 
-## Nginx
+# Nginx
 
 The tornado webserver should be connected to Nginx which should behave as a reverse-proxy for better performance.
