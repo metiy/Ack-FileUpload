@@ -38,5 +38,6 @@ TARGET    : Server address
 
 
 # Nginx
-
 The tornado webserver should be connected to Nginx which should behave as a reverse-proxy for better performance.
+
+Actual upload limit is set to 30M.
