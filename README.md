@@ -1,9 +1,9 @@
 #Install
 sudo pip3 install tornado
 
-git clone https://github.com/Storm75/Ack-FileUpload.git
+git clone https://github.com/metiy/FileUpload.git
 
-cd Ack-FileUpload && mkdir uploads
+cd FileUpload && mkdir uploads
 
 #Server
 
